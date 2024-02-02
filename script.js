@@ -61,8 +61,41 @@ btn.addEventListener('click', () => {
     }
 });
 
+
 reset.addEventListener('click',()=>{
     input.value=""
+    location.reload();
     btn.innerHTML="Submit"
     btn.style.background='linear-gradient(163deg, rgba(17, 197, 214, 1) 0%, rgba(14, 165, 218, 1) 100%)';
 }); 
+
+
+// my code ends
+
+let currentLevelWords = level1.split(' '); // Initialize with level1 words
+
+input.addEventListener('input', () => {
+    const userInputWords = input.value.trim().split(' ');
+
+    const isCorrect = userInputWords.every((word, index) => word === currentLevelWords[index]);
+
+    if (isCorrect) {
+        input.style.borderColor = 'green';
+        // or input.style.color = 'green';
+    } else {
+        input.style.borderColor = 'red';
+        // or input.style.color = 'red';
+    }
+});
+
+// Function to set the current level
+function setCurrentLevel(level) {
+    input.value = ''; // Clear input when changing levels
+    first.innerHTML = level;
+    currentLevelWords = level.split(' ');
+    input.placeholder = "Start typing here";
+}
+
+
+// ending code of gpt
+
