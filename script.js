@@ -42,34 +42,22 @@ four.addEventListener('click', () => {
     input.placeholder = "Start typing here";
 }); 
 
-btn.addEventListener('click',()=>{
-    if(input.value==level1){
-        btn.innerHTML="Correct";
-        btn.style.background='linear-gradient(0deg, rgba(26,241,87,1) 0%, rgba(66,170,28,1) 100%)';
-    }else{
-        btn.innerHTML="Better Luck Next time";
-        btn.style.background='linear-gradient(0deg, rgba(194,30,30,1) 0%, rgba(213,19,19,1) 100%)';
-    }
-    if(input.value==level2){
-        btn.innerHTML="Correct";
-        btn.style.background='linear-gradient(0deg, rgba(26,241,87,1) 0%, rgba(66,170,28,1) 100%)';
-    }else{
-        btn.innerHTML="Better Luck Next time";
-        btn.style.background='linear-gradient(0deg, rgba(194,30,30,1) 0%, rgba(213,19,19,1) 100%)';
-    }
-    if(input.value==level3){
-        btn.innerHTML="Correct";
-        btn.style.background='linear-gradient(0deg, rgba(26,241,87,1) 0%, rgba(66,170,28,1) 100%)';
-    }else{
-        btn.innerHTML="Better Luck Next time";
-        btn.style.background='linear-gradient(0deg, rgba(194,30,30,1) 0%, rgba(213,19,19,1) 100%)';
-    }
-    if(input.value==level4){
-        btn.innerHTML="Correct";
-        btn.style.background='linear-gradient(0deg, rgba(26,241,87,1) 0%, rgba(66,170,28,1) 100%)';
-    }else{
-        btn.innerHTML="Better Luck Next time";
-        btn.style.background='linear-gradient(0deg, rgba(194,30,30,1) 0%, rgba(213,19,19,1) 100%)';
+btn.addEventListener('click', () => {
+    if (input.value == level1) {
+        btn.innerHTML = "Correct";
+        btn.style.background = 'linear-gradient(0deg, rgba(26,241,87,1) 0%, rgba(66,170,28,1) 100%)';
+    } else if (input.value == level2) {
+        btn.innerHTML = "Correct";
+        btn.style.background = 'linear-gradient(0deg, rgba(26,241,87,1) 0%, rgba(66,170,28,1) 100%)';
+    } else if (input.value == level3) {
+        btn.innerHTML = "Correct";
+        btn.style.background = 'linear-gradient(0deg, rgba(26,241,87,1) 0%, rgba(66,170,28,1) 100%)';
+    } else if (input.value == level4) {
+        btn.innerHTML = "Correct";
+        btn.style.background = 'linear-gradient(0deg, rgba(26,241,87,1) 0%, rgba(66,170,28,1) 100%)';
+    } else {
+        btn.innerHTML = "Better Luck Next time";
+        btn.style.background = 'linear-gradient(0deg, rgba(194,30,30,1) 0%, rgba(213,19,19,1) 100%)';
     }
 });
 
