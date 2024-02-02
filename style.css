@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;  /* To include padding and border in element's total width and height */
+    
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(0deg, rgba(12, 134, 231, 1) 0%, rgba(32, 130, 173, 1) 100%);
+    color: white;
+}
+
+.navitem {
+    display: flex;
+    text-decoration: none;
+    font-size: 10px;
+    gap: 2rem;  /* Adjusted for responsiveness */
+}
+
+.navitem h1:hover {
+    cursor: pointer;
+    border-bottom: 2px solid rgba(213, 14, 14, 0.859);
+    transform: scale(1.1);  /* Corrected typo */
+    transition: 0.18s ease-in;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    padding: 20px;  /* Adjusted for responsiveness */
+    width: 100%;  /* Adjusted for responsiveness */
+    max-width: 800px;  /* Added for responsiveness */
+    margin: auto;  /* Center the main container */
+}
+
+.main h1 {
+    margin-bottom: 20px;  /* Adjusted for responsiveness */
+}
+.main p{
+    font-size: 19px;
+    line-height: 25px;
+}
+
+.content {
+    text-align: center;
+}
+
+input {
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    max-width: 600px;
+    height: 45px;  /* Adjusted for responsiveness */
+    padding: 10px;
+    font-size: 1.2rem;  /* Adjusted for responsiveness */
+    outline: none;
+    border: 0.1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.07);
+    margin-bottom: 1rem;
+
+}
+
+input::placeholder {
+    opacity: 0.6;
+}
+
+#btn {
+    border: none;
+    outline: none;
+    margin-top: 1rem;  /* Adjusted for responsiveness */
+    padding: 10px;
+    font-size: 1.2rem;  /* Adjusted for responsiveness */
+    font-style: bold;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+    background: linear-gradient(163deg, rgba(17, 197, 214, 1) 0%, rgba(14, 165, 218, 1) 100%);
+    color: white;
+}
+
+.text {
+    text-align: left;
+    background: white;
+    color: black;
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 2rem;
+    font-size: 1rem;  /* Adjusted for responsiveness */
+}
+
+.reset {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;  /* Allow items to wrap to the next line on smaller screens */
+    justify-content: center;
+}
+
+.resetbtn {
+    margin-top: 1rem;
+    padding: 8px;
+    background: linear-gradient(163deg, rgba(17, 197, 214, 1) 0%, rgba(14, 165, 218, 1) 100%);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
